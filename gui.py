@@ -1,6 +1,11 @@
 import time
 import functions
 import FreeSimpleGUI as sg
+import os
+
+if not os.path.exists("todos.txt"):
+    with open("todos.txt", "w") as file:
+        pass
 
 sg.theme("SystemDefault")
 
